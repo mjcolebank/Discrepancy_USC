@@ -1,0 +1,574 @@
+{
+  "args": {
+    "n_signals": 50,
+    "seed": 325,
+    "n_grid": 200,
+    "n_obs": 20,
+    "t0": 0.0,
+    "tf": 10.0,
+    "sigma_e": 0.1,
+    "F0": 25.0,
+    "omega_f": 5.0,
+    "n_starts": 2,
+    "max_nfev": 500,
+    "mcmc_steps": 10000,
+    "burn_adapt": 2000,
+    "n_chains": 1,
+    "outdir": "TwoSpring_50signal_results",
+    "force_local_mcmc": false
+  },
+  "theta_true_values": [
+    [
+      47.387262785177825,
+      3.86135383075971,
+      65.42329454182314,
+      6.398497146151702
+    ],
+    [
+      20.490030850463196,
+      1.0831025422783145,
+      49.89032378736701,
+      3.9130226986184478
+    ],
+    [
+      37.66451267051637,
+      5.3695579019025415,
+      75.43751334479624,
+      1.007375207592052
+    ],
+    [
+      9.124321452415915,
+      2.1791772782634027,
+      61.82864599231934,
+      4.490066261182388
+    ],
+    [
+      73.2077132000694,
+      6.8456001615634845,
+      61.07648687321723,
+      9.311360051076461
+    ],
+    [
+      13.802684285930255,
+      7.142129701385404,
+      12.791097561092867,
+      0.3003938774337622
+    ],
+    [
+      20.342407189488075,
+      5.736994553225234,
+      80.59421414127094,
+      7.90385352403559
+    ],
+    [
+      91.74363803934126,
+      7.174892715162904,
+      21.649524683219685,
+      0.8880043189884553
+    ],
+    [
+      93.66239192855453,
+      8.465221961215468,
+      14.495977013947478,
+      3.730599237687541
+    ],
+    [
+      95.54471440631526,
+      9.256546445980057,
+      72.2249594952584,
+      5.233241159329371
+    ],
+    [
+      31.97025343875523,
+      5.8628404548908355,
+      30.55190056427675,
+      6.519770882944594
+    ],
+    [
+      29.60136850869155,
+      7.996210006542522,
+      45.78715100827846,
+      6.5782906262622
+    ],
+    [
+      12.172232072374745,
+      2.940290415194436,
+      2.6194658579624788,
+      0.6698259564303134
+    ],
+    [
+      62.12835897726301,
+      3.0656232686954623,
+      50.331305432278604,
+      0.19258343739257458
+    ],
+    [
+      88.07897190038616,
+      7.842946707183698,
+      20.95590251461852,
+      9.584498120676106
+    ],
+    [
+      76.62738395406863,
+      0.7163055926435363,
+      99.34076914933235,
+      6.946117998680333
+    ],
+    [
+      20.03389523888462,
+      2.3917687612936605,
+      17.935641417307078,
+      4.389319711247142
+    ],
+    [
+      13.295284061250179,
+      1.7554631575021882,
+      40.561863317935966,
+      5.920998842548867
+    ],
+    [
+      77.10160462517871,
+      7.109241634239272,
+      46.98321077519633,
+      4.636470412481549
+    ],
+    [
+      74.20895853102675,
+      5.323830840280184,
+      72.02983175073281,
+      2.9503550682160817
+    ],
+    [
+      30.988246912425556,
+      9.962779572331423,
+      78.14369791864695,
+      0.7549818273249963
+    ],
+    [
+      75.71576763574622,
+      1.6650632561123824,
+      79.83926558824847,
+      2.3656562959934773
+    ],
+    [
+      2.912365332907224,
+      4.396963946859321,
+      18.39407412505263,
+      5.861815362797627
+    ],
+    [
+      15.470670329562312,
+      6.425563251782364,
+      7.659536571071624,
+      9.484356267902825
+    ],
+    [
+      6.641116740819214,
+      5.053898893180173,
+      39.25944517732389,
+      4.303411144931223
+    ],
+    [
+      46.3890549071648,
+      8.004270561285391,
+      99.40365627244879,
+      0.7856235937901439
+    ],
+    [
+      15.617439271262652,
+      2.702076530988591,
+      56.006440914097325,
+      8.119325965449779
+    ],
+    [
+      57.64662486335114,
+      4.653051357526589,
+      93.24218347495088,
+      4.086301313399941
+    ],
+    [
+      92.33403732868224,
+      9.85584693437854,
+      74.86303798260607,
+      8.713049562810953
+    ],
+    [
+      34.21291981543442,
+      3.0708802844237657,
+      19.76811854671104,
+      9.952818306903398
+    ],
+    [
+      57.01753794779773,
+      9.977332133376155,
+      84.30403225719847,
+      0.8168730017868431
+    ],
+    [
+      77.80688520912898,
+      7.398660440052934,
+      52.487016458416356,
+      4.4090226394947765
+    ],
+    [
+      82.01661714050452,
+      4.400612010319185,
+      22.854749719185815,
+      5.073056849160574
+    ],
+    [
+      63.50930816728326,
+      7.3531175802563435,
+      41.08745386607733,
+      5.386775819108877
+    ],
+    [
+      13.072019311196403,
+      2.8031732499361715,
+      25.71265032901019,
+      8.21027197401805
+    ],
+    [
+      91.64863137305055,
+      8.925751796668614,
+      52.47304549217849,
+      8.069472276339686
+    ],
+    [
+      7.556301458699805,
+      3.3264828206673265,
+      24.43888483277366,
+      7.429173344201699
+    ],
+    [
+      60.29813122605018,
+      9.993391122341956,
+      33.965255618187406,
+      7.836572659298052
+    ],
+    [
+      68.43912981241428,
+      7.814062773117352,
+      68.48210725424597,
+      4.816420290999611
+    ],
+    [
+      84.11793695685436,
+      7.974133393868716,
+      14.868961263966995,
+      4.294530005900663
+    ],
+    [
+      26.894691545472217,
+      0.14262115609338857,
+      53.58400289772311,
+      2.3617179670676247
+    ],
+    [
+      90.07540629075106,
+      0.4728416752981196,
+      43.41384942091724,
+      9.868210971270448
+    ],
+    [
+      28.83032838827858,
+      2.9865585389549225,
+      37.01764373519528,
+      1.1397635436128162
+    ],
+    [
+      76.72982268720259,
+      0.9800685376212157,
+      29.76652347344494,
+      5.256155235825379
+    ],
+    [
+      53.378774172064794,
+      9.004259051092417,
+      61.01609870962019,
+      0.9470559088721557
+    ],
+    [
+      79.14616711235874,
+      6.402119266881517,
+      88.95286504992106,
+      1.326070478437951
+    ],
+    [
+      7.799551817033373,
+      8.737570798677842,
+      53.60557246240901,
+      0.6699218797820248
+    ],
+    [
+      26.318284861715362,
+      9.037157996388093,
+      69.41203763163715,
+      9.29856413258142
+    ],
+    [
+      28.407525317263516,
+      3.522210089661888,
+      49.631499498727266,
+      3.5286029652310713
+    ],
+    [
+      43.870960022899695,
+      9.71595466048767,
+      75.28463092836384,
+      1.0517411509968382
+    ]
+  ],
+  "files": [
+    {
+      "signal_index": 0,
+      "pkl": "TwoSpring_50signal_results\\signal_000_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_000_results.npz"
+    },
+    {
+      "signal_index": 1,
+      "pkl": "TwoSpring_50signal_results\\signal_001_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_001_results.npz"
+    },
+    {
+      "signal_index": 2,
+      "pkl": "TwoSpring_50signal_results\\signal_002_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_002_results.npz"
+    },
+    {
+      "signal_index": 3,
+      "pkl": "TwoSpring_50signal_results\\signal_003_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_003_results.npz"
+    },
+    {
+      "signal_index": 4,
+      "pkl": "TwoSpring_50signal_results\\signal_004_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_004_results.npz"
+    },
+    {
+      "signal_index": 5,
+      "pkl": "TwoSpring_50signal_results\\signal_005_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_005_results.npz"
+    },
+    {
+      "signal_index": 6,
+      "pkl": "TwoSpring_50signal_results\\signal_006_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_006_results.npz"
+    },
+    {
+      "signal_index": 7,
+      "pkl": "TwoSpring_50signal_results\\signal_007_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_007_results.npz"
+    },
+    {
+      "signal_index": 8,
+      "pkl": "TwoSpring_50signal_results\\signal_008_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_008_results.npz"
+    },
+    {
+      "signal_index": 9,
+      "pkl": "TwoSpring_50signal_results\\signal_009_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_009_results.npz"
+    },
+    {
+      "signal_index": 10,
+      "pkl": "TwoSpring_50signal_results\\signal_010_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_010_results.npz"
+    },
+    {
+      "signal_index": 11,
+      "pkl": "TwoSpring_50signal_results\\signal_011_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_011_results.npz"
+    },
+    {
+      "signal_index": 12,
+      "pkl": "TwoSpring_50signal_results\\signal_012_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_012_results.npz"
+    },
+    {
+      "signal_index": 13,
+      "pkl": "TwoSpring_50signal_results\\signal_013_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_013_results.npz"
+    },
+    {
+      "signal_index": 14,
+      "pkl": "TwoSpring_50signal_results\\signal_014_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_014_results.npz"
+    },
+    {
+      "signal_index": 15,
+      "pkl": "TwoSpring_50signal_results\\signal_015_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_015_results.npz"
+    },
+    {
+      "signal_index": 16,
+      "pkl": "TwoSpring_50signal_results\\signal_016_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_016_results.npz"
+    },
+    {
+      "signal_index": 17,
+      "pkl": "TwoSpring_50signal_results\\signal_017_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_017_results.npz"
+    },
+    {
+      "signal_index": 18,
+      "pkl": "TwoSpring_50signal_results\\signal_018_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_018_results.npz"
+    },
+    {
+      "signal_index": 19,
+      "pkl": "TwoSpring_50signal_results\\signal_019_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_019_results.npz"
+    },
+    {
+      "signal_index": 20,
+      "pkl": "TwoSpring_50signal_results\\signal_020_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_020_results.npz"
+    },
+    {
+      "signal_index": 21,
+      "pkl": "TwoSpring_50signal_results\\signal_021_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_021_results.npz"
+    },
+    {
+      "signal_index": 22,
+      "pkl": "TwoSpring_50signal_results\\signal_022_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_022_results.npz"
+    },
+    {
+      "signal_index": 23,
+      "pkl": "TwoSpring_50signal_results\\signal_023_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_023_results.npz"
+    },
+    {
+      "signal_index": 24,
+      "pkl": "TwoSpring_50signal_results\\signal_024_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_024_results.npz"
+    },
+    {
+      "signal_index": 25,
+      "pkl": "TwoSpring_50signal_results\\signal_025_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_025_results.npz"
+    },
+    {
+      "signal_index": 26,
+      "pkl": "TwoSpring_50signal_results\\signal_026_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_026_results.npz"
+    },
+    {
+      "signal_index": 27,
+      "pkl": "TwoSpring_50signal_results\\signal_027_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_027_results.npz"
+    },
+    {
+      "signal_index": 28,
+      "pkl": "TwoSpring_50signal_results\\signal_028_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_028_results.npz"
+    },
+    {
+      "signal_index": 29,
+      "pkl": "TwoSpring_50signal_results\\signal_029_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_029_results.npz"
+    },
+    {
+      "signal_index": 30,
+      "pkl": "TwoSpring_50signal_results\\signal_030_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_030_results.npz"
+    },
+    {
+      "signal_index": 31,
+      "pkl": "TwoSpring_50signal_results\\signal_031_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_031_results.npz"
+    },
+    {
+      "signal_index": 32,
+      "pkl": "TwoSpring_50signal_results\\signal_032_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_032_results.npz"
+    },
+    {
+      "signal_index": 33,
+      "pkl": "TwoSpring_50signal_results\\signal_033_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_033_results.npz"
+    },
+    {
+      "signal_index": 34,
+      "pkl": "TwoSpring_50signal_results\\signal_034_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_034_results.npz"
+    },
+    {
+      "signal_index": 35,
+      "pkl": "TwoSpring_50signal_results\\signal_035_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_035_results.npz"
+    },
+    {
+      "signal_index": 36,
+      "pkl": "TwoSpring_50signal_results\\signal_036_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_036_results.npz"
+    },
+    {
+      "signal_index": 37,
+      "pkl": "TwoSpring_50signal_results\\signal_037_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_037_results.npz"
+    },
+    {
+      "signal_index": 38,
+      "pkl": "TwoSpring_50signal_results\\signal_038_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_038_results.npz"
+    },
+    {
+      "signal_index": 39,
+      "pkl": "TwoSpring_50signal_results\\signal_039_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_039_results.npz"
+    },
+    {
+      "signal_index": 40,
+      "pkl": "TwoSpring_50signal_results\\signal_040_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_040_results.npz"
+    },
+    {
+      "signal_index": 41,
+      "pkl": "TwoSpring_50signal_results\\signal_041_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_041_results.npz"
+    },
+    {
+      "signal_index": 42,
+      "pkl": "TwoSpring_50signal_results\\signal_042_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_042_results.npz"
+    },
+    {
+      "signal_index": 43,
+      "pkl": "TwoSpring_50signal_results\\signal_043_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_043_results.npz"
+    },
+    {
+      "signal_index": 44,
+      "pkl": "TwoSpring_50signal_results\\signal_044_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_044_results.npz"
+    },
+    {
+      "signal_index": 45,
+      "pkl": "TwoSpring_50signal_results\\signal_045_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_045_results.npz"
+    },
+    {
+      "signal_index": 46,
+      "pkl": "TwoSpring_50signal_results\\signal_046_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_046_results.npz"
+    },
+    {
+      "signal_index": 47,
+      "pkl": "TwoSpring_50signal_results\\signal_047_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_047_results.npz"
+    },
+    {
+      "signal_index": 48,
+      "pkl": "TwoSpring_50signal_results\\signal_048_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_048_results.npz"
+    },
+    {
+      "signal_index": 49,
+      "pkl": "TwoSpring_50signal_results\\signal_049_results.pkl",
+      "npz": "TwoSpring_50signal_results\\signal_049_results.npz"
+    }
+  ]
+}

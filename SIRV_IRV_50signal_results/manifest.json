@@ -1,0 +1,622 @@
+{
+  "args": {
+    "n_signals": 50,
+    "seed": 325,
+    "n_grid": 50,
+    "n_obs": 20,
+    "t0": 0.0,
+    "tf": 5.0,
+    "sigma_e": 0.001,
+    "n_starts": 50,
+    "max_nfev": 500,
+    "mcmc_steps": 10000,
+    "burn_adapt": 2000,
+    "n_chains": 1,
+    "outdir": "SIRV_IRV_50signal_results_V2",
+    "force_local_mcmc": false
+  },
+  "theta_true_values": [
+    [
+      11.74846567961033,
+      0.4419412573417918,
+      0.6856663140165741,
+      0.6725906496501547,
+      0.2771820986405745
+    ],
+    [
+      8.794426296790558,
+      0.5444574889760637,
+      0.44663842714713164,
+      0.43331375155014884,
+      0.5790507183547765
+    ],
+    [
+      14.015152593518888,
+      0.18248865523564106,
+      0.1738574677492356,
+      0.2890161162057639,
+      0.6529876908392667
+    ],
+    [
+      11.547528291864555,
+      0.7564337563642672,
+      0.7132363783239531,
+      0.6461498806656111,
+      0.9373963682796783
+    ],
+    [
+      9.034560346337798,
+      0.7401936092168548,
+      0.20719179600993515,
+      0.11821762522125112,
+      0.27584006535898253
+    ],
+    [
+      12.55514711371736,
+      0.8235837649206449,
+      0.8094412294577809,
+      0.9249421639940114,
+      0.7431720650148095
+    ],
+    [
+      9.668648459250075,
+      0.17163675627167777,
+      0.9423853811686775,
+      0.8604747237468606,
+      0.22269070012679526
+    ],
+    [
+      10.933817565808113,
+      0.9594974036937751,
+      0.9324133132709141,
+      0.7474996317750764,
+      0.566658287211761
+    ],
+    [
+      10.502646742525675,
+      0.6238945868082577,
+      0.36865364149342505,
+      0.6836155348131449,
+      0.36001244098810503
+    ],
+    [
+      14.380775762862644,
+      0.5071559182570768,
+      0.6889355114783818,
+      0.2015657461124977,
+      0.35820821956313054
+    ],
+    [
+      8.13086592791616,
+      0.15180235967548306,
+      0.6557123543387546,
+      0.3696021153359511,
+      0.5484664130207146
+    ],
+    [
+      8.07481489890309,
+      0.8916270172762378,
+      0.8039042461076089,
+      0.2814172955874411,
+      0.962227101879646
+    ],
+    [
+      14.111303753864131,
+      0.1560277811494124,
+      0.9940069922666577,
+      0.722374363516394,
+      0.27303541126258746
+    ],
+    [
+      9.851934352560534,
+      0.2539603765209735,
+      0.489938155567922,
+      0.2117753096477289,
+      0.2504966506820171
+    ],
+    [
+      11.196918247914017,
+      0.6291817129589878,
+      0.7918327693198064,
+      0.7372037849308429,
+      0.5180291888654212
+    ],
+    [
+      11.665834676752766,
+      0.7655359866456978,
+      0.574893712752744,
+      0.7457257431884801,
+      0.3591231880196438
+    ],
+    [
+      10.423292679791963,
+      0.996616324757402,
+      0.8013063447149722,
+      0.15954380248409059,
+      0.7792342512340565
+    ],
+    [
+      9.264697580696875,
+      0.8167205962568043,
+      0.3059687541812252,
+      0.11738513939006567,
+      0.49063308607812006
+    ],
+    [
+      9.405581747479001,
+      0.6238013966179661,
+      0.23155154845056647,
+      0.6750512047074877,
+      0.16054124155519658
+    ],
+    [
+      15.583318196285111,
+      0.15128287946199287,
+      0.5503544448345612,
+      0.4478131379756717,
+      0.4821282859028385
+    ],
+    [
+      11.667802416740589,
+      0.8185700510259446,
+      0.994578693385898,
+      0.1623294176172858,
+      0.23288581155693322
+    ],
+    [
+      10.102688105849367,
+      0.6000585537645211,
+      0.8290296332227072,
+      0.6149693169395558,
+      0.5139137597751445
+    ],
+    [
+      15.453913816157646,
+      0.46239102849090374,
+      0.9303094302607477,
+      0.9868951758525946,
+      0.7714821634782371
+    ],
+    [
+      14.960040050756326,
+      0.40193563468576743,
+      0.37008002585670596,
+      0.2706192595155549,
+      0.9957107551730362
+    ],
+    [
+      12.526669733155373,
+      0.9979392848523778,
+      0.8573093841563498,
+      0.16517027288971303,
+      0.7982444109920815
+    ],
+    [
+      13.897907426305402,
+      0.5680637859856033,
+      0.4917293308631615,
+      0.8365147012773139,
+      0.49096472821083503
+    ],
+    [
+      9.766040381348349,
+      0.5520960771964158,
+      0.6682664378843932,
+      0.7593743254778494,
+      0.46443139878252115
+    ],
+    [
+      12.272142076047578,
+      0.20974563010178549,
+      0.3457430227214701,
+      0.32466045753645634,
+      0.8372974521834591
+    ],
+    [
+      15.325141929135398,
+      0.9023410724244194,
+      0.5679367772016227,
+      0.8244974796672443,
+      0.1596027405336346
+    ],
+    [
+      10.607258844983697,
+      0.31308077120703326,
+      0.7662884858365181,
+      0.6390739202368199,
+      0.9993991929401779
+    ],
+    [
+      10.663859039853527,
+      0.8033247872089139,
+      0.7130829982946753,
+      0.8012784339197593,
+      0.7134737023113271
+    ],
+    [
+      11.811248719999686,
+      0.855617608698676,
+      0.8158303085335197,
+      0.2260814660360636,
+      0.4813209096273331
+    ],
+    [
+      10.092500326906846,
+      0.10387465055394442,
+      0.578036389979301,
+      0.3056107242788749,
+      0.9097764208250095
+    ],
+    [
+      8.301286202261107,
+      0.4855804492810658,
+      0.9880191792064044,
+      0.35300298534798713,
+      0.3624144126322657
+    ],
+    [
+      10.910516665470325,
+      0.194523958510256,
+      0.7884529335200234,
+      0.18000623069283778,
+      0.36151384975859036
+    ],
+    [
+      12.166590089555863,
+      0.5761706742914982,
+      0.9094780955538562,
+      0.6456008973601836,
+      0.17700508262474143
+    ],
+    [
+      14.314841786857272,
+      0.6729199333528652,
+      0.8995715004538278,
+      0.21146095258526826,
+      0.16181410742757613
+    ],
+    [
+      14.979855190850781,
+      0.578232476930991,
+      0.1518110799801841,
+      0.3301662260155942,
+      0.9124689087625539
+    ],
+    [
+      13.528245465182799,
+      0.9362331029619474,
+      0.349159321066032,
+      0.4111100081510807,
+      0.5421045408975206
+    ],
+    [
+      10.770588254732179,
+      0.4897360002081791,
+      0.97417769640797,
+      0.7753148266214894,
+      0.18652192281789437
+    ],
+    [
+      10.944657987889293,
+      0.5546182677092727,
+      0.5674211612774931,
+      0.17039637521211415,
+      0.6771635204836648
+    ],
+    [
+      11.683710311637125,
+      0.640415134940707,
+      0.3297733875493025,
+      0.3598746878527236,
+      0.2888024737872531
+    ],
+    [
+      14.20878790672774,
+      0.44293788892415265,
+      0.20981711249713364,
+      0.16779858987762936,
+      0.3883711991082692
+    ],
+    [
+      10.68753815435684,
+      0.6651670399042015,
+      0.8529329125024759,
+      0.7835809232526515,
+      0.46968263032756885
+    ],
+    [
+      14.451122814479099,
+      0.9544282801274292,
+      0.9599526848151188,
+      0.16718538697450736,
+      0.8988300990818217
+    ],
+    [
+      13.750676793784315,
+      0.20602996339113594,
+      0.6666620395116163,
+      0.8576274750052163,
+      0.1786164780671825
+    ],
+    [
+      14.240371628114968,
+      0.8328155035050692,
+      0.27657549687266053,
+      0.38388574476574666,
+      0.5771134383339027
+    ],
+    [
+      13.786453638022238,
+      0.5326449713427638,
+      0.7511406400545058,
+      0.7595219350276545,
+      0.8963189982338201
+    ],
+    [
+      12.773879440118051,
+      0.7733141591324815,
+      0.47004080185843167,
+      0.732062464857066,
+      0.14414449447969202
+    ],
+    [
+      10.455124918044158,
+      0.2636300458509028,
+      0.8409019392360193,
+      0.4473432928695825,
+      0.8760057697087101
+    ]
+  ],
+  "files": [
+    {
+      "signal_index": 0,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_000_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_000_results.npz"
+    },
+    {
+      "signal_index": 1,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_001_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_001_results.npz"
+    },
+    {
+      "signal_index": 2,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_002_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_002_results.npz"
+    },
+    {
+      "signal_index": 3,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_003_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_003_results.npz"
+    },
+    {
+      "signal_index": 4,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_004_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_004_results.npz"
+    },
+    {
+      "signal_index": 5,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_005_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_005_results.npz"
+    },
+    {
+      "signal_index": 6,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_006_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_006_results.npz"
+    },
+    {
+      "signal_index": 7,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_007_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_007_results.npz"
+    },
+    {
+      "signal_index": 8,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_008_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_008_results.npz"
+    },
+    {
+      "signal_index": 9,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_009_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_009_results.npz"
+    },
+    {
+      "signal_index": 10,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_010_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_010_results.npz"
+    },
+    {
+      "signal_index": 11,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_011_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_011_results.npz"
+    },
+    {
+      "signal_index": 12,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_012_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_012_results.npz"
+    },
+    {
+      "signal_index": 13,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_013_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_013_results.npz"
+    },
+    {
+      "signal_index": 14,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_014_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_014_results.npz"
+    },
+    {
+      "signal_index": 15,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_015_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_015_results.npz"
+    },
+    {
+      "signal_index": 16,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_016_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_016_results.npz"
+    },
+    {
+      "signal_index": 17,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_017_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_017_results.npz"
+    },
+    {
+      "signal_index": 18,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_018_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_018_results.npz"
+    },
+    {
+      "signal_index": 19,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_019_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_019_results.npz"
+    },
+    {
+      "signal_index": 20,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_020_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_020_results.npz"
+    },
+    {
+      "signal_index": 21,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_021_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_021_results.npz"
+    },
+    {
+      "signal_index": 22,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_022_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_022_results.npz"
+    },
+    {
+      "signal_index": 23,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_023_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_023_results.npz"
+    },
+    {
+      "signal_index": 24,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_024_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_024_results.npz"
+    },
+    {
+      "signal_index": 25,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_025_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_025_results.npz"
+    },
+    {
+      "signal_index": 26,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_026_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_026_results.npz"
+    },
+    {
+      "signal_index": 27,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_027_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_027_results.npz"
+    },
+    {
+      "signal_index": 28,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_028_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_028_results.npz"
+    },
+    {
+      "signal_index": 29,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_029_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_029_results.npz"
+    },
+    {
+      "signal_index": 30,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_030_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_030_results.npz"
+    },
+    {
+      "signal_index": 31,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_031_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_031_results.npz"
+    },
+    {
+      "signal_index": 32,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_032_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_032_results.npz"
+    },
+    {
+      "signal_index": 33,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_033_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_033_results.npz"
+    },
+    {
+      "signal_index": 34,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_034_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_034_results.npz"
+    },
+    {
+      "signal_index": 35,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_035_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_035_results.npz"
+    },
+    {
+      "signal_index": 36,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_036_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_036_results.npz"
+    },
+    {
+      "signal_index": 37,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_037_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_037_results.npz"
+    },
+    {
+      "signal_index": 38,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_038_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_038_results.npz"
+    },
+    {
+      "signal_index": 39,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_039_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_039_results.npz"
+    },
+    {
+      "signal_index": 40,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_040_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_040_results.npz"
+    },
+    {
+      "signal_index": 41,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_041_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_041_results.npz"
+    },
+    {
+      "signal_index": 42,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_042_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_042_results.npz"
+    },
+    {
+      "signal_index": 43,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_043_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_043_results.npz"
+    },
+    {
+      "signal_index": 44,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_044_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_044_results.npz"
+    },
+    {
+      "signal_index": 45,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_045_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_045_results.npz"
+    },
+    {
+      "signal_index": 46,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_046_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_046_results.npz"
+    },
+    {
+      "signal_index": 47,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_047_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_047_results.npz"
+    },
+    {
+      "signal_index": 48,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_048_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_048_results.npz"
+    },
+    {
+      "signal_index": 49,
+      "pkl": "SIRV_IRV_50signal_results_V2\\signal_049_results.pkl",
+      "npz": "SIRV_IRV_50signal_results_V2\\signal_049_results.npz"
+    }
+  ]
+}
