@@ -3,42 +3,8 @@
 import torch 
 import numpy as np 
 import matplotlib.pyplot as plt
-from scipy.integrate import odeint, solve_ivp
+from scipy.integrate import odeint
 from scipy.stats import norm, multivariate_normal, invgamma, uniform
-
-
-# def coupled_sys(t,yall,params):
-#     # 2 states and 4x2=8 sensitivities
-#     v,w,va,wa,vb,wb,vtau,wtau,vI,wI = yall
-#     sens = yall[2:]
-#     # Unpack parameters
-#     # a,v,mu,wr,wv = np.exp(params)
-#     a,b,tau,I = params
-#     # Jacobian of system
-#     dgdy = np.zeros((8,8))
-#     for i in range(4):
-#         ind = 2*i
-#         dgdy[ind,ind]   = 1.0 - v**2
-#         dgdy[ind,ind+1] = -1.0        
-
-#         dgdy[ind+1,ind]   = 1.0/tau
-#         dgdy[ind+1,ind+1] = -b/tau     
-
-    
-
-#     # RHS equations
-#     dvdt = v - (v**3) / 3.0 - w + I
-#     dwdt = (v + a - b * w) / tau
-
-#     # Sensitivity vector should be column vector defined by dRhs1/dpar1, dRHS2/dpar1, dRHS3/dpar1, .... up to dRHS_N / dpar_N
-#     dgdpar = np.array([[0.0,1.0/tau,0.0,-w/tau,0.0,-dwdt/tau,1.0,0.0]])
-
-#     ds = np.matmul(dgdy,sens) + dgdpar
-
-#     dYall = np.zeros(10)
-#     dYall[0:2] = [dvdt,dwdt]
-#     dYall[2:] = ds
-#     return dYall
 
 def coupled_sys(t,yall,params):
     v, w, va, wa, vb, wb, vtau, wtau, vI, wI = yall
@@ -109,10 +75,7 @@ def call_model(params, x):
     X0[0:2] = [v0,w0]  
 
     # call SciPy's odeint (works on CPU numpy arrays)
-    # solution = odeint(coupled_sys, X0, tspace, args=(params_np,))  # shape (n_time, 24)
-    solution = solve_ivp(fun=coupled_sys, y0=X0, t_span=(tspace[0],tspace[-1]),
-                t_eval=tspace, method='DOP853', args=(params_np,),
-                rtol=1e-4, atol=1e-6)  # shape (n_time, 24)
+    solution = odeint(coupled_sys, X0, tspace, args=(params_np,))  # shape (n_time, 24)
 
     # transpose -> (10, n_time), convert to torch, move to out_device
     sol_t = torch.from_numpy(solution.y.astype(np.float32)).to(device=out_device) 
